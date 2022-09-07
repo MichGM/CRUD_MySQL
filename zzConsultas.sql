@@ -1,0 +1,12 @@
+SELECT "consulta_1";
+SELECT fabricante FROM fabricantes ORDER BY fabricante;
+SELECT "Consulta_2";
+SELECT fabricante,precio,año FROM bicicletas WHERE año >=2019 ORDER BY fabricante;
+SELECT "Consulta_3";
+SELECT fabricante FROM motocicletas WHERE id_prov=101;
+SELECT "Consulta_4";
+SELECT fabricante FROM compras WHERE alias="lucky" ORDER BY fabricante;
+SELECT "Consulta_5";
+SELECT c.alias, c.nombre, c.apellidos FROM clientes c, compras p WHERE p.alias=c.alias AND p.fabricante="Yeti" ORDER BY nombre;
+SELECT "Consulta_6";
+SELECT count(fabricante) FROM bicicletas WHERE año>= 2019;
